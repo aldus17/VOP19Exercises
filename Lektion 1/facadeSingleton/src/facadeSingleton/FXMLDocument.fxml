@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" prefHeight="440.0" prefWidth="640.0" xmlns="http://javafx.com/javafx/10.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="facadeSingleton.FXMLDocumentController">
+   <children>
+      <RadioButton fx:id="ellipseRadioButton" layoutX="122.0" layoutY="93.0" mnemonicParsing="false" onAction="#radioButtonOnAction" prefHeight="18.0" prefWidth="74.0" text="Ellipse">
+         <toggleGroup>
+            <ToggleGroup fx:id="toggleGroupShape" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="rectangleRadioButton" layoutX="122.0" layoutY="144.0" mnemonicParsing="false" onAction="#radioButtonOnAction" text="Rectangle" toggleGroup="$toggleGroupShape" />
+      <RadioButton fx:id="circleRadioButton" layoutX="122.0" layoutY="202.0" mnemonicParsing="false" onAction="#radioButtonOnAction" prefHeight="18.0" prefWidth="74.0" text="Circle" toggleGroup="$toggleGroupShape" />
+      <RadioButton fx:id="squareRadioButton" layoutX="122.0" layoutY="253.0" mnemonicParsing="false" onAction="#radioButtonOnAction" prefHeight="18.0" prefWidth="74.0" text="Square" toggleGroup="$toggleGroupShape" />
+      <TextField fx:id="input1" layoutX="271.0" layoutY="76.0" prefHeight="26.0" prefWidth="57.0" />
+      <TextField fx:id="input2" layoutX="412.0" layoutY="76.0" prefHeight="26.0" prefWidth="58.0" />
+      <TextArea fx:id="informationField" layoutX="271.0" layoutY="162.0" prefHeight="226.0" prefWidth="294.0" />
+      <Button fx:id="getInfoButton" layoutX="337.0" layoutY="126.0" mnemonicParsing="false" onAction="#getInfoOnAction" prefHeight="26.0" prefWidth="74.0" text="Get Info" />
+      <Button fx:id="clearButton" layoutX="353.0" layoutY="399.0" mnemonicParsing="false" onAction="#clearButtonOnAction" prefHeight="26.0" prefWidth="115.0" text="Clear Text Field" />
+      <Label fx:id="labelPara2" layoutX="411.0" layoutY="59.0" prefHeight="18.0" prefWidth="74.0" text="Parameter 2:" />
+      <Label fx:id="labelPara1" layoutX="271.0" layoutY="59.0" prefHeight="18.0" prefWidth="74.0" text="Parameter 1:" />
+   </children>
+</AnchorPane>

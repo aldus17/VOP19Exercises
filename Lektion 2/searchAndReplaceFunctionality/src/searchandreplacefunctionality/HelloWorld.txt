@@ -1,0 +1,18 @@
+﻿/**
+ * TestWorld Example for use during the VOP exam F15
+ * @author erso   Created on 15-05-2015, 10:19:06
+ */
+public class TestWorld {
+
+    public TestWorld() {
+        System.out.println("TestWorld");
+    }
+
+
+    public static void main(String[] args) {
+        TestWorld helloWorld = new TestWorld();
+    }
+}
+
+
+

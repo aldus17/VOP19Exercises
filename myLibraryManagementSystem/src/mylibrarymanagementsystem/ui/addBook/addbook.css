@@ -1,0 +1,13 @@
+/* 
+    Created on : 29-04-2019, 19:51:31
+    Author     : Aleksander G. Duszkiewicz
+*/
+
+.jfx.button{
+    -fx-background-color: #1976D2;
+    -fx-text-fill: white;
+    
+}
+.jfx.button:hover {
+    -fx-background-color: #388E3C;
+}

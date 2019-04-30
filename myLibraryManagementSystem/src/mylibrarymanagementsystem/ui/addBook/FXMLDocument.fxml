@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="217.0" prefWidth="474.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mylibrarymanagementsystem.ui.addBook.FXMLDocumentController">
+   <children>
+      <VBox layoutY="-68.0" prefHeight="337.0" prefWidth="474.0" AnchorPane.bottomAnchor="82.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <JFXTextField fx:id="bookTitelTxtField" promptText="Bog titel">
+               <VBox.margin>
+                  <Insets left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="bookIDTxtField" layoutX="20.0" layoutY="30.0" promptText="Bog ID">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="20.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="bookAuthorTxtField" layoutX="20.0" layoutY="30.0" promptText="Bog forfatter">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <JFXTextField fx:id="bookPublisherTxtField" layoutX="10.0" layoutY="55.0" promptText="Udgiver">
+               <VBox.margin>
+                  <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+               </VBox.margin>
+            </JFXTextField>
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <JFXButton fx:id="bookSaveButton" onAction="#addBook" prefHeight="66.0" prefWidth="250.0" styleClass="jfx" stylesheets="@addbook.css" text="Gem" />
+                  <JFXButton fx:id="bookCancelButton" onAction="#cancelAdd" prefHeight="66.0" prefWidth="200.0" styleClass="jfx" stylesheets="@addbook.css" text="Annullere" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
