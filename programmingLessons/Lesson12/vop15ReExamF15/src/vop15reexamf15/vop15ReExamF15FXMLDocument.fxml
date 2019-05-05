@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="455.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop15reexamf15.Vop15ReExamF15Controller">
+   <children>
+      <TabPane layoutX="84.0" layoutY="48.0" prefHeight="325.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="Special numbers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Label layoutX="113.0" layoutY="89.0" text="Input number: " />
+                        <TextField fx:id="inNumTextField" layoutX="202.0" layoutY="85.0" prefHeight="25.0" prefWidth="268.0" />
+                        <Button fx:id="isEvenButton" layoutX="153.0" layoutY="161.0" mnemonicParsing="false" onAction="#numberButtonOnAction" text="isEven" />
+                        <Button fx:id="isPrimeButton" layoutX="252.0" layoutY="161.0" mnemonicParsing="false" onAction="#numberButtonOnAction" text="isPrime" />
+                        <Button fx:id="isPowerOf2Button" layoutX="350.0" layoutY="161.0" mnemonicParsing="false" onAction="#numberButtonOnAction" text="isPowerOf2" />
+                        <Label layoutX="118.0" layoutY="263.0" text="Result:" />
+                        <TextField fx:id="outputNumResultTextField" layoutX="202.0" layoutY="259.0" prefHeight="25.0" prefWidth="268.0" />
+                        <Button fx:id="isSquareButton" layoutX="470.0" layoutY="161.0" mnemonicParsing="false" onAction="#numberButtonOnAction" text="isSquare" />
+                        <Button fx:id="specialNumbersExitButton" layoutX="531.0" layoutY="346.0" mnemonicParsing="false" onAction="#operationActionHandler" prefHeight="25.0" prefWidth="101.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Check numbers">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <Button fx:id="clearButton" layoutX="569.0" layoutY="281.0" mnemonicParsing="false" onAction="#operationActionHandler" text="Clear" />
+                        <RadioButton fx:id="powerOf2RB" layoutX="550.0" layoutY="185.0" mnemonicParsing="false" onAction="#checkNumbersRadioOnAction" text="Potenser af 2" />
+                        <RadioButton fx:id="primeRB" layoutX="550.0" layoutY="147.0" mnemonicParsing="false" onAction="#checkNumbersRadioOnAction" text="Primtal" />
+                        <RadioButton fx:id="evenNumRB" layoutX="550.0" layoutY="105.0" mnemonicParsing="false" onAction="#checkNumbersRadioOnAction" text="Lige numre" />
+                        <TextField fx:id="minNumTextField" layoutX="131.0" layoutY="67.0" prefHeight="25.0" prefWidth="55.0" />
+                        <TextField fx:id="maxNumTextField" layoutX="323.0" layoutY="67.0" prefHeight="25.0" prefWidth="55.0" />
+                        <Label layoutX="96.0" layoutY="71.0" text="Min:" />
+                        <Label layoutX="292.0" layoutY="71.0" text="Max:" />
+                        <TextArea fx:id="checkNumberTextArea" editable="false" layoutX="41.0" layoutY="113.0" prefHeight="294.0" prefWidth="462.0" wrapText="true" />
+                        <RadioButton fx:id="squareRB" layoutX="550.0" layoutY="223.0" mnemonicParsing="false" onAction="#checkNumbersRadioOnAction" prefHeight="17.0" prefWidth="99.0" text="Kvardrattal" />
+                        <Button fx:id="checkNumbersExitButton" layoutX="530.0" layoutY="367.0" mnemonicParsing="false" onAction="#operationActionHandler" prefHeight="25.0" prefWidth="101.0" text="Exit" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Tour de France">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+            <Tab text="Shuffle Cards">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+               </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
