@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<jnlp spec="1.0" xmlns:jfx="http://javafx.com" href="vop15Eksamen.jnlp">
+  <information>
+    <title>vop15Eksamen</title>
+    <vendor>AleksanderSTUD</vendor>
+    <description>null</description>
+    <offline-allowed/>
+  </information>
+  <resources>
+    <j2se version="1.6+" href="http://java.sun.com/products/autodl/j2se"/>
+    <jar href="vop15Eksamen.jar" size="22437" download="eager" />
+  </resources>
+  <applet-desc  width="800" height="600" main-class="com.javafx.main.NoJavaFXFallback"  name="vop15Eksamen" >
+    <param name="requiredFXVersion" value="8.0+"/>
+  </applet-desc>
+  <jfx:javafx-desc  width="800" height="600" main-class="vop15eksamen.ui.Vop15Eksamen"  name="vop15Eksamen" />
+  <update check="always"/>
+</jnlp>
