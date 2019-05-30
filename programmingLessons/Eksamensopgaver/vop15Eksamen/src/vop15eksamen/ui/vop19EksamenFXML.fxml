@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane id="AnchorPane" fx:id="rootPane" prefHeight="579.0" prefWidth="603.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vop15eksamen.ui.Vop19EksamenFXMLController">
+   <children>
+      <TabPane prefHeight="325.0" prefWidth="500.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+        <tabs>
+          <Tab text="FillArrayProgram">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TextField fx:id="sizeTextField" layoutX="56.0" layoutY="38.0" prefHeight="26.0" prefWidth="41.0" />
+                        <TextField fx:id="maxTextField" layoutX="138.0" layoutY="38.0" prefHeight="26.0" prefWidth="43.0" />
+                        <Label layoutX="14.0" layoutY="42.0" prefHeight="18.0" prefWidth="39.0" text="Size:" />
+                        <Label layoutX="104.0" layoutY="43.0" text="Max: " />
+                        <TextArea fx:id="outputLogTextArea" layoutX="47.0" layoutY="83.0" prefHeight="371.0" prefWidth="475.0" />
+                        <Button fx:id="fillArrayButton" layoutX="216.0" layoutY="38.0" mnemonicParsing="false" onAction="#buttonActionHandler" prefHeight="26.0" prefWidth="146.0" text="fillArray" />
+                        <Button fx:id="fillArrayUniqueButton" layoutX="378.0" layoutY="39.0" mnemonicParsing="false" onAction="#buttonActionHandler" prefHeight="26.0" prefWidth="144.0" text="fillArrayUnique" />
+                        <TextField fx:id="divisorTextField" layoutX="83.0" layoutY="477.0" prefHeight="26.0" prefWidth="43.0" />
+                        <Label layoutX="34.0" layoutY="481.0" text="Divisor: " />
+                        <Button fx:id="sumOfArrayButton" layoutX="163.0" layoutY="477.0" mnemonicParsing="false" onAction="#buttonActionHandler" prefHeight="26.0" prefWidth="150.0" text="sumOfArray" />
+                        <Button fx:id="exitButton" layoutX="416.0" layoutY="503.0" mnemonicParsing="false" onAction="#operationActionHandler" prefHeight="25.0" prefWidth="111.0" text="Exit" />
+                        <Button fx:id="clearOutputButton" layoutX="416.0" layoutY="465.0" mnemonicParsing="false" onAction="#operationActionHandler" prefHeight="25.0" prefWidth="111.0" text="Clear output" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Washing Machine">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <RadioButton fx:id="sixKGRButton" layoutX="55.0" layoutY="80.0" mnemonicParsing="false" onAction="#radioButtonHandler" text="Vask max 6 kg" />
+                        <RadioButton fx:id="twelveKGRButton" layoutX="55.0" layoutY="153.0" mnemonicParsing="false" onAction="#radioButtonHandler" text="Vask max 12 kg" />
+                        <RadioButton fx:id="dryerRButton" layoutX="55.0" layoutY="233.0" mnemonicParsing="false" onAction="#radioButtonHandler" text="Tørre tumbler" />
+                        <TextField fx:id="progamTextField" layoutX="354.0" layoutY="97.0" prefHeight="25.0" prefWidth="45.0" />
+                        <Label layoutX="302.0" layoutY="72.0" text="Program 1 - 7 eller minutter" />
+                        <TextField fx:id="outputTextField" layoutX="176.0" layoutY="244.0" prefHeight="26.0" prefWidth="404.0" />
+                        <Button fx:id="exitButton1" layoutX="441.0" layoutY="477.0" mnemonicParsing="false" onAction="#operationActionHandler" prefHeight="25.0" prefWidth="111.0" text="Exit" />
+                        <Label layoutX="176.0" layoutY="227.0" text="Machine output:" />
+                        <Button fx:id="startWashingButton" layoutX="65.0" layoutY="477.0" mnemonicParsing="false" onAction="#washingButtonHandler" prefHeight="25.0" prefWidth="111.0" text="Start washing!!!" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>
