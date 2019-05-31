@@ -4,12 +4,9 @@ import java.util.Scanner;
 
 public class Liang_7_18_bubbleSort {
 
-    /**
-     * Main method
-     */
     public static void main(String[] args) {
-        Scanner input = new Scanner(System.in); 
-        double[] numbers = new double[10]; 
+        Scanner input = new Scanner(System.in);
+        double[] numbers = new double[10];
 
         // Prompt the user to enter ten numbers
         System.out.print("Enter ten numbers: ");
@@ -28,8 +25,8 @@ public class Liang_7_18_bubbleSort {
     }
 
     /**
-     * 
-     * @param list, of type double[], the list to be sorted 
+     *
+     * @param list, of type double[], the list to be sorted
      */
     public static void bubbleSort(double[] list) {
         double temp;
