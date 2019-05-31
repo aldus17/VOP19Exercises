@@ -1,6 +1,5 @@
 package oopexam2012.opg1_usernames;
 
-import java.util.Arrays;
 import java.util.Date;
 
 public class User {
@@ -47,16 +46,9 @@ public class User {
             userName += firstName.substring(0, 2) + lastName.substring(0, 3);
         }
 
-        if (userName.contains("å")) {
-            userName = userName.replace("å", "aa");
-
-        }
-        if (userName.contains("æ")) {
-            userName = userName.replace("æ", "ae");
-        }
-        if (userName.contains("ø")) {
-            userName = userName.replace("ø", "oe");
-        }
+        userName = userName.replace("æ", "ae");
+        userName = userName.replace("ø", "oe");
+        userName = userName.replace("å", "aa");
 
         return userName.toLowerCase();
     }
