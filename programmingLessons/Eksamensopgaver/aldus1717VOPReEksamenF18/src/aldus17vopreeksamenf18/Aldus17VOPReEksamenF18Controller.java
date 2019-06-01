@@ -1,4 +1,4 @@
-package aldus1717vopreeksamenf18;
+package aldus17vopreeksamenf18;
 
 import java.net.URL;
 import java.util.ResourceBundle;
@@ -16,7 +16,7 @@ import javafx.scene.control.TextField;
 import javafx.scene.control.ToggleGroup;
 import population.TownStatistics;
 
-public class Aldus1717VOPReEksamenF18Controller implements Initializable {
+public class Aldus17VOPReEksamenF18Controller implements Initializable {
 
     // Scrolling Text
     private Label label;
@@ -114,7 +114,7 @@ public class Aldus1717VOPReEksamenF18Controller implements Initializable {
                 }
 
             } catch (InterruptedException ex) {
-                Logger.getLogger(Aldus1717VOPReEksamenF18Controller.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Aldus17VOPReEksamenF18Controller.class.getName()).log(Level.SEVERE, null, ex);
 
             }
 
@@ -149,7 +149,7 @@ public class Aldus1717VOPReEksamenF18Controller implements Initializable {
                 }
 
             } catch (InterruptedException ex) {
-                Logger.getLogger(Aldus1717VOPReEksamenF18Controller.class.getName()).log(Level.SEVERE, null, ex);
+                Logger.getLogger(Aldus17VOPReEksamenF18Controller.class.getName()).log(Level.SEVERE, null, ex);
 
             }
         }

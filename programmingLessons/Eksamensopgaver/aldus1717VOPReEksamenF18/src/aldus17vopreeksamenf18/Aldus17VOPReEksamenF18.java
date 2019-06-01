@@ -3,7 +3,7 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package aldus1717vopreeksamenf18;
+package aldus17vopreeksamenf18;
 
 import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
@@ -15,14 +15,14 @@ import javafx.stage.Stage;
  *
  * @author PCATG
  */
-public class Aldus1717VOPReEksamenF18 extends Application {
-    
+public class Aldus17VOPReEksamenF18 extends Application {
+
     @Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("Aldus1717VOPReEksamenF18FXML.fxml"));
-        
+        Parent root = FXMLLoader.load(getClass().getResource("Aldus17VOPReEksamenF18FXML.fxml"));
+
         Scene scene = new Scene(root);
-        
+
         stage.setScene(scene);
         stage.show();
     }
@@ -33,5 +33,5 @@ public class Aldus1717VOPReEksamenF18 extends Application {
     public static void main(String[] args) {
         launch(args);
     }
-    
+
 }
